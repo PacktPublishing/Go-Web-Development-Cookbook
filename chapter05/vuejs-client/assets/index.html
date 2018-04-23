@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <title>VueJs Client</title>
+      <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+      <script type = "text/javascript" src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>
+   </head>
+   <body>
+      <div id = "form">
+         <h1>{{ message }}</h1>
+         <table>
+            <tr>
+                <td><label for="id">Id</label></td>
+                <td><input type="text" value="" v-model="id"/></td>
+            </tr>
+            <tr>
+                <td><label for="firstName">FirstName</label></td>
+                <td><input type="text" value="" v-model="firstName" /></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">LastName</label></td>
+                <td> <input type="text" value="" v-model="lastName" /></td>
+            </tr>
+            <tr>
+               <td><a href="#" class="btn" @click="addEmployee">Add</a></td>
+            </tr>
+         </table>
+      </div>
+      <script type = "text/javascript" src = "main.js"></script>
+   </body>
+</html>

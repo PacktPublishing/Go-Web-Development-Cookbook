@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         AngularJs Client
+      </title>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script type = "text/javascript" src = "main.js"></script>
+   </head>
+   <body>
+      <div ng-app="myapp" ng-controller="employeeController">
+         <div>
+            Id : <input ng-model="id"/><br/><br/>
+            FirstName : <input ng-model="firstName"/><br/><br/>
+            LastName : <input ng-model="lastName"/><br/><br/>
+            <input type="button" value="Add" ng-click="addEmployee(id, firstName, lastName)" /> <br/><br/>
+         </div>
+         <p>Output Message : {{message}}</p>
+      </div>
+   </body>
+</html>

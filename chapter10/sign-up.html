@@ -1,0 +1,13 @@
+<html>
+ <head>
+ <title>Sign Up!</title>
+ </head>
+ <body>
+  <form method="POST" action="/post" accept-charset="UTF-8">
+  <input type="text" name="name">
+  <input type="text" name="email">
+   {{ .csrfField }}
+  <input type="submit" value="Sign up!">
+  </form>
+  </body>
+</html>
